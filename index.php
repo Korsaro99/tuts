@@ -36,10 +36,17 @@ echo '<br>';
 echo strtolower($name);
 echo '<br>';
 echo str_replace('v','w',$name);
+echo '<br>';
 
 //Numbers
+$radius = 25; //intiger
+$pi = 3.14; //float double
+echo $pi;
+echo '<br>';
+//Operators +,-,*,/,**(power of)
+//Order of operation ( B I D M A S ) (Brackes Indicies Division Multiplication Addistion Subtraction )
 
-
+echo $radius**2 * $pi ;
 //SURNAME = 'SSSS'; //errore
 //echo '<b>Hello world</b>';
 //echo '<br>'
