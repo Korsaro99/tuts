@@ -45,4 +45,3 @@ echo str_replace('v','w',$name);
 //echo '<br>'
 //echo '<b>Anita MAx Win</b>';
 ?>
-
