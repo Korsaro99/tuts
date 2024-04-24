@@ -88,6 +88,38 @@ echo '<br>';
 echo ceil($float);//it floors the number to the nearest biggest int
 echo '<br>';
 echo pi();
+echo '<br>';
+echo '<br>';
+
+//Arrays 
+//indexed
+$people = ['stef','jo','jonny','poul'];
+$animals = array('dog','cat','cow','fish');
+$intigers = [20, 30, 54, 72, 89];
+
+$intigers[1] = 35;
+$intigers[] = 61;
+array_push($people, 'gino');
+$stringArray = array_merge($people, $animals);
+
+//echo $people;//error arrays are difficult to automaticaly convert to strings
+echo $people[2];
+echo '<br>';
+echo $animals[1];
+echo '<br>';
+print_r($animals);
+echo '<br>';
+echo count($intigers);
+echo '<br>';
+print_r($stringArray);
+
+//associative
+
+
+
+
+
+
 //SURNAME = 'SSSS'; //errore
 //echo '<b>Hello world</b>';
 //echo '<br>'
