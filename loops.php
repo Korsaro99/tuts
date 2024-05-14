@@ -47,10 +47,13 @@ while ($i < count($blogs2)) {
     $i ++;
 }
 
+
+
+
 ?>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>PHP Tutorial</title>
@@ -66,4 +69,4 @@ while ($i < count($blogs2)) {
         <?php } ?> 
     </ul>
 </body>
-</html>
+</html> -->
