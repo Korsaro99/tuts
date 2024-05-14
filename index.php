@@ -248,7 +248,7 @@ while ($i < count($blogs2)) {
 
 //Boolea & comparisons
 //numbers
-echo true;
+/* echo true;
 echo '<br>';
 echo false;
 echo '<br>';
@@ -261,11 +261,11 @@ echo '<br>';
 echo 10 == 10;
 echo '<br>';
 echo 5 != 10;
-echo '<br>';
+echo '<br>'; */
 
 //String
 
-echo 'stefano' != 'francesco';
+/* echo 'stefano' != 'francesco';
 echo '<br>';
 echo 'stefano' < 'francesco';
 echo '<br>';
@@ -276,13 +276,45 @@ echo '<br>';
 echo 'stefano' == 'stefano';
 echo '<br>';
 echo 'stefano' == 'Stefano';
-echo '<br>';
+echo '<br>'; */
 
 
 //losse vs strict comparison
-echo true == '1';
+/* echo true == '1';
 echo '<br>';
-echo false === '';
+echo false === ''; */
+
+//Conditional Statements
+
+$prezzo = 6;
+
+if ($prezzo < 4){
+    echo 'sup gggg';
+}elseif ($prezzo < 10) {
+    # code...
+    echo 'wdsadfd';
+}else{
+    echo 'ghhghghgh';
+}
+
+foreach ($products as $product) {
+    # code...
+    if($product['price'] < 15 && $product['price'] > 2){
+        echo $product['name'] . ' _ ' . $product['price']; 
+        echo '<br>';
+    }    
+}
+
+echo '<br>';
+echo '===========================================';
+echo '<br><br>';
+foreach ($products as $product) {
+    # code...
+    if($product['price'] < 10 || $product['price'] > 20){
+        echo $product['name'] . ' _ ' . $product['price']; 
+        echo '<br>';
+    }    
+}
 
 //SURNAME = 'SSSS'; //errore
 //#echo '<b>Hello world</b>';
@@ -300,11 +332,12 @@ echo false === '';
     <h1>Products</h1>
     <ul>
         <?php foreach ($products as $product) { ?>   
-        <li><h3> <?php echo $product['name'];  ?> </h3> 
-            <p>£ <?php echo $product['price'];  ?> </p>
-        </li>    
-            
+            <?php if($product['price'] > 15){?>     
+                <li><h3> <?php echo $product['name'];  ?> </h3> 
+                    <p>£ <?php echo $product['price'];  ?> </p>
+                </li>    
+            <?php } ?>     
         <?php } ?> 
     </ul>
 </body>
-</html>
+</html> 

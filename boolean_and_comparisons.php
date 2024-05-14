@@ -40,6 +40,8 @@ echo '<br>';
 echo 5 == '5';
 echo '<br>';
 echo 5 === '5';
+
+
 //SURNAME = 'SSSS'; //errore
 //#echo '<b>Hello world</b>';
 //#echo '<br>'

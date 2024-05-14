@@ -53,7 +53,7 @@ while ($i < count($blogs2)) {
 ?>
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>PHP Tutorial</title>
@@ -69,4 +69,4 @@ while ($i < count($blogs2)) {
         <?php } ?> 
     </ul>
 </body>
-</html> -->
+</html> 
