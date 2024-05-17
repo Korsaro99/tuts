@@ -220,7 +220,7 @@ $products = [
     ['name' => 'banana skin', 'price' => 2]
 ];
 
-for ($i=0; $i < 5; $i++) { 
+/* for ($i=0; $i < 5; $i++) { 
     # code...
     echo $i . '<br>'; 
 }
@@ -245,7 +245,7 @@ while ($i < count($blogs2)) {
     echo '<br />';
     $i ++;
 }
-
+ */
 //Boolea & comparisons
 //numbers
 /* echo true;
@@ -286,7 +286,7 @@ echo false === ''; */
 
 //Conditional Statements
 
-$prezzo = 6;
+/* $prezzo = 6;
 
 if ($prezzo < 4){
     echo 'sup gggg';
@@ -314,15 +314,47 @@ foreach ($products as $product) {
         echo $product['name'] . ' _ ' . $product['price']; 
         echo '<br>';
     }    
+} */
+//Continue & Break
+
+
+foreach ($products as $product) {
+    # code...
+    if($product['name'] === 'lightning bolt'){
+        break;
+    }
+
+    if($product['price'] > 15){
+        continue; //passa al prossimo ciclo senza eseguire il codice rimanente
+    } 
+    //echo $product['name'].'<br>';    
 }
 
+//function
+
+sayHello();
+sayHi();
+sayHi('Gonmg');
+formatProduct(['name'=>'hammer', 'price'=> 50]);
+
+function sayHello(){
+    echo 'Good morning steeve'."<br>";
+}
+
+function sayHi($name = "DEfault Name"){ //valore di default in caso non viene passato un argomento 
+    echo "Good morning $name"."<br>";
+}
+
+function formatProduct($product){
+    echo "{$product['name']} costs £{$product['price']}"."<br>";
+}
 //SURNAME = 'SSSS'; //errore
 //#echo '<b>Hello world</b>';
 //#echo '<br>'
 //#echo '<b>Anita MAx Win</b>';
 ?>
 
-
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -340,4 +372,4 @@ foreach ($products as $product) {
         <?php } ?> 
     </ul>
 </body>
-</html> 
+</html>  -->
